@@ -3,18 +3,19 @@
     <ion-title class="title">
       Duff Store
     </ion-title>
+    <ion-buttons [routerLink]="['/add-cerveja']" slot="primary">
+     <ion-button> 
+      <ion-icon name="add-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
   Bem vindo ao app de cerveja mais famoso do Brasil.
-  <br/>
-  <br/>
+  <br />
+  <br />
   <h2>Conheça nossas cervejas</h2>
 
-
-  <ion-button color="danger" expand="full" [routerLink]="['/puro-malte']" >Puro Malte</ion-button>
-  <ion-button color="primary" expand="full" [routerLink]="['/pilsen']">Pilsen</ion-button>
-  <ion-button color="dark" expand="full" [routerLink]="['/lager']">Lager</ion-button>
 
 </ion-content>
