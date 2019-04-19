@@ -18,9 +18,20 @@
     <ion-item>
       <ion-label color="success" position="floating">Descrição</ion-label>
       <ion-textarea name="descricao" ngModel>
-
       </ion-textarea>
     </ion-item>
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          tipo
+        </ion-list-header>
+        <ion-item>
+          <ion-label>Puro Malte</ion-label>
+          <ion-radio slot="end" value=""></ion-radio>
+
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
     <br />
     <ion-button type="submit" color="success">
       <ion-icon name="save"></ion-icon>
