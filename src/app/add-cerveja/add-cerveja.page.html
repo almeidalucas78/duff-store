@@ -10,13 +10,13 @@
 <ion-content padding>
   <form #form="ngForm" (ngSubmit)="salvar(form)">
     <ion-item>
-      <ion-label color="success" position="floating">
+      <ion-label color="secondary" position="floating">
         Nome da Cerveja
       </ion-label>
       <ion-input name="nome" ngModel></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label color="success" position="floating">Descrição</ion-label>
+      <ion-label color="secondary" position="floating">Descrição</ion-label>
       <ion-textarea name="descricao" ngModel>
       </ion-textarea>
     </ion-item>
@@ -27,13 +27,17 @@
         </ion-list-header>
         <ion-item>
           <ion-label>Puro Malte</ion-label>
-          <ion-radio slot="end" value=""></ion-radio>
-
+          <ion-radio slot="end" value="Puro Malte"></ion-radio>
         </ion-item>
+        <ion-item>
+            <ion-label>Large</ion-label>
+            <ion-radio slot="end" value="Large"></ion-radio>
+          </ion-item>
+        
       </ion-radio-group>
     </ion-list>
     <br />
-    <ion-button type="submit" color="success">
+    <ion-button type="submit" color="secondary">
       <ion-icon name="save"></ion-icon>
       Salvar
     </ion-button>
